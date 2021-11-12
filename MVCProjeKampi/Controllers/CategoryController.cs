@@ -37,6 +37,7 @@ namespace MVCProjeKampi.Controllers
         {
             CategoryValidator categoryValidator = new CategoryValidator();
             ValidationResult result = categoryValidator.Validate(p);
+
             if (result.IsValid)
             {
                 cm.CategoryAddBL(p);
