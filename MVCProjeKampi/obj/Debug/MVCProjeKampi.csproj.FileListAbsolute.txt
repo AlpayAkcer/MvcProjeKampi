@@ -200,6 +200,11 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\roslyn\vbc.rsp
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\roslyn\VBCSCompiler.exe
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\Antlr3.Runtime.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\BusinessLayer.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\DataAccessLayer.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityFramework.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityFramework.SqlServer.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityLayer.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\Newtonsoft.Json.dll
@@ -211,6 +216,14 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.WebPag
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.WebPages.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.WebPages.Razor.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\WebGrease.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\BusinessLayer.pdb
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\BusinessLayer.dll.config
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\DataAccessLayer.pdb
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\DataAccessLayer.dll.config
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityLayer.pdb
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityLayer.dll.config
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityFramework.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityFramework.SqlServer.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.Helpers.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.Mvc.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.Optimization.xml

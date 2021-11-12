@@ -16,7 +16,6 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\bin\Debug\EntityFramewo
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\bin\Debug\EntityFramework.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.dll
