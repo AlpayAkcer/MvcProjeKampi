@@ -1,0 +1,49 @@
+﻿@using EntityLayer.Concrete
+@model List<Category>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12">
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">DataTable with default features</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            IsActive
+                        </th>
+                        <th>
+                            CreateDate
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.CategoryId</td>
+                            <td>@item.Name</td>
+                            <td>@item.IsActive</td>
+                            <td>@item.CreateDate</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+</div>
