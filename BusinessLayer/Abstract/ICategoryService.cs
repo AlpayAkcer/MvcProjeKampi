@@ -11,6 +11,6 @@ namespace BusinessLayer.Abstract
     {
         List<Category> GetCategoryList();
 
-       
+        void CategoryAddBL(Category category);
     }
 }
