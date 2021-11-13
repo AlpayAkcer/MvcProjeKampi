@@ -1,21 +1,18 @@
 ﻿@model EntityLayer.Concrete.Writer
 @{
-    ViewBag.Title = "AddWriter";
+    ViewBag.Title = "EditWriter";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 
-@using (Html.BeginForm("AddWriter", "Writer", FormMethod.Post))
+@using (Html.BeginForm("EditWriter", "Writer", FormMethod.Post))
 {
 
     <div class="row">
-
-
         <div class="col-md-12">
-
             <div class="card card-secondary">
                 <div class="card-header">
-                    <h3 class="card-title">Yeni Yazar Ekleme</h3>
+                    <h3 class="card-title">Yazar Güncelleme</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -24,9 +21,16 @@
                             <div class="col-sm-6">
                                 <!-- text input -->
                                 <div class="form-group">
+                                    <label>ID</label>
+                                    @Html.TextBoxFor(m => m.WriterId, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- text input -->
+                                <div class="form-group">
                                     <label>Yazar Adı</label>
                                     @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
-                                    @Html.ValidationMessageFor(x => x.Name)
+                                    @Html.ValidationMessageFor(m => m.Name, null, new { @class = "text-danger" })
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -34,9 +38,10 @@
                                 <div class="form-group">
                                     <label>Yazar Soyadı</label>
                                     @Html.TextBoxFor(m => m.Surname, new { @class = "form-control" })
-                                    @Html.ValidationMessageFor(x => x.Surname)
+                                    @Html.ValidationMessageFor(m => m.Surname, null, new { @class = "text-danger" })
                                 </div>
                             </div>
+
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
@@ -44,7 +49,7 @@
                                 <div class="form-group">
                                     <label>Yazar Ünvan</label>
                                     @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
-                                    @Html.ValidationMessageFor(x => x.Title)
+                                    @Html.ValidationMessageFor(m => m.Title, null, new { @class = "text-danger" })
                                 </div>
                             </div>
                         </div>
@@ -54,7 +59,7 @@
                                 <div class="form-group">
                                     <label>Resim</label>
                                     @Html.TextBoxFor(m => m.Picture, new { @class = "form-control" })
-                                    @Html.ValidationMessageFor(x => x.Picture)
+                                    @Html.ValidationMessageFor(m => m.Picture, null, new { @class = "text-danger" })
                                 </div>
                             </div>
                         </div>
@@ -64,7 +69,7 @@
                                 <div class="form-group">
                                     <label>Mail</label>
                                     @Html.TextBoxFor(m => m.Mail, new { @class = "form-control" })
-                                    @Html.ValidationMessageFor(x => x.Mail)
+                                    @Html.ValidationMessageFor(m => m.Mail, null, new { @class = "text-danger" })
                                 </div>
                             </div>
 
@@ -75,13 +80,13 @@
                                 <div class="form-group">
                                     <label>Hakkında</label>
                                     @Html.TextAreaFor(m => m.WriterAbout, new { @class = "form-control" })
-                                    @Html.ValidationMessageFor(x => x.WriterAbout)
+                                    @Html.ValidationMessageFor(m => m.WriterAbout, null, new { @class = "text-danger" })
                                 </div>
                             </div>
 
                         </div>
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-default float-right">Kaydet</button>
+                        <div>
+                            <button type="submit" class="btn btn-warning float-right">Güncelle</button>
                         </div>
                     </form>
                 </div>

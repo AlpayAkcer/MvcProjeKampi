@@ -14,8 +14,12 @@ namespace BusinessLayer.ValidationRules
         {
             RuleFor(x => x.Name).NotEmpty().WithMessage("Yazar Adını Boş Geçmeyiniz.");
             RuleFor(x => x.Name).MinimumLength(3).WithMessage("En Az 3 Karakter Girilmelidir.");
+
             RuleFor(x => x.Surname).MinimumLength(3).WithMessage("En Az 3 Karakter Girilmelidir.");
             RuleFor(x => x.Surname).NotEmpty().WithMessage("Soyadını Boş Geçmeyiniz.");
+
+            RuleFor(x => x.Title).NotEmpty().WithMessage("Yazar Ünvanını Boş Geçmeyiniz.");
+            RuleFor(x => x.Title).MinimumLength(10).WithMessage("En Az 3 Karakter Girilmelidir.");
 
             RuleFor(s => s.Mail).NotEmpty().WithMessage("Email adresi gerekli.");
             RuleFor(s => s.Mail).EmailAddress().WithMessage("Geçerli bir Email Adresi Girilmelidir");
