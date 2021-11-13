@@ -34,3 +34,4 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAcces
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_edit.resources
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_title_add.resources
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1_heading_IsActive_add.resources

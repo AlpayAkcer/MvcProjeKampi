@@ -20,3 +20,4 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.c
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache

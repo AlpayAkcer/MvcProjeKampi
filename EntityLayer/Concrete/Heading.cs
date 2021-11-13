@@ -15,6 +15,8 @@ namespace EntityLayer.Concrete
         public string Name { get; set; }
         public DateTime CreateDate { get; set; } = DateTime.Now;
 
+        public bool IsActive { get; set; }
+
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
