@@ -1,0 +1,63 @@
+﻿@using EntityLayer.Concrete
+@model List<Heading>
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12">
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Başlıkların Listesi</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            #
+                        </th>
+                        <th>
+                            Başlık Adı
+                        </th>
+                        <th>
+                            Kategori
+                        </th>
+                        <th>
+                            Yazar Adı Soyadı
+                        </th>
+                        <th>
+                            Oluşturma Tarihi
+                        </th>
+                        <th>
+                            İşlemler
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.HeadingId</td>
+                            <td>@item.Name</td>
+                            <td>@item.Category.Name</td>
+                            <td>@item.Writer.Name @item.Writer.Surname</td>
+                            <td>@(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy"))</td>
+                            <td>
+                                <a href="/Heading/DeleteHeading/@item.HeadingId" class="btn btn-danger">Sil</a>
+                                <a href="/Heading/EditHeading/@item.HeadingId" class="btn btn-warning">Güncelle</a>
+                                <a href="#" class="btn btn-primary">Başlıklar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+</div>
