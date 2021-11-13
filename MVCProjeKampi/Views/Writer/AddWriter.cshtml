@@ -42,6 +42,27 @@
                             <div class="col-sm-12">
                                 <!-- textarea -->
                                 <div class="form-group">
+                                    <label>Resim</label>
+                                    @Html.TextBoxFor(m => m.Picture, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(x => x.Picture)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!-- textarea -->
+                                <div class="form-group">
+                                    <label>Mail</label>
+                                    @Html.TextBoxFor(m => m.Mail, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(x => x.Mail)
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!-- textarea -->
+                                <div class="form-group">
                                     <label>Hakkında</label>
                                     @Html.TextAreaFor(m => m.WriterAbout, new { @class = "form-control" })
                                     @Html.ValidationMessageFor(x => x.WriterAbout)

@@ -17,6 +17,8 @@ namespace BusinessLayer.ValidationRules
             RuleFor(x => x.Surname).MinimumLength(3).WithMessage("En Az 3 Karakter Girilmelidir.");
             RuleFor(x => x.Surname).NotEmpty().WithMessage("Soyadını Boş Geçmeyiniz.");
 
+            RuleFor(s => s.Mail).NotEmpty().WithMessage("Email adresi gerekli.");
+            RuleFor(s => s.Mail).EmailAddress().WithMessage("Geçerli bir Email Adresi Girilmelidir");
 
             //https://www.c-sharpcorner.com/article/fluent-validation-in-asp-net-mvc/
             //https://docs.fluentvalidation.net/en/latest/built-in-validators.html
