@@ -15,8 +15,11 @@ namespace EntityLayer.Concrete
         public string UserName { get; set; }
         [StringLength(70)]
         public string Surname { get; set; }
+        public DateTime CreateDate { get; set; } = DateTime.Now;
         [StringLength(150)]
         public string Email { get; set; }
+        [StringLength(100)]
+        public string Subject { get; set; }
         [StringLength(500)]
         public string Messge { get; set; }
         public bool IsActive { get; set; }

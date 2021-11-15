@@ -40,3 +40,6 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAcces
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_content_IsActive_adding_dbTable.resources
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1_about_table_summary_adding.resources
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1_add_about_picture_table.resources
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1_contact_adding_table_subject.resources
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1_contact_adding_datetime.resources
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1_message_table_adding.resources

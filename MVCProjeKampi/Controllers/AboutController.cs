@@ -28,5 +28,10 @@ namespace MVCProjeKampi.Controllers
             aboutmanager.AboutAdd(p);
             return RedirectToAction("Index");
         }
+
+        public PartialViewResult aboutPartial()
+        {
+            return PartialView();
+        }
     }
 }

@@ -102,6 +102,18 @@
     <Compile Include="Migrations\202111151513034_mig1_add_about_picture_table.designer.cs">
       <DependentUpon>202111151513034_mig1_add_about_picture_table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111151947469_mig1_contact_adding_table_subject.cs" />
+    <Compile Include="Migrations\202111151947469_mig1_contact_adding_table_subject.designer.cs">
+      <DependentUpon>202111151947469_mig1_contact_adding_table_subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111152000342_mig1_contact_adding_datetime.cs" />
+    <Compile Include="Migrations\202111152000342_mig1_contact_adding_datetime.designer.cs">
+      <DependentUpon>202111152000342_mig1_contact_adding_datetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111152036314_mig1_message_table_adding.cs" />
+    <Compile Include="Migrations\202111152036314_mig1_message_table_adding.designer.cs">
+      <DependentUpon>202111152036314_mig1_message_table_adding.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -142,6 +154,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111151513034_mig1_add_about_picture_table.resx">
       <DependentUpon>202111151513034_mig1_add_about_picture_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111151947469_mig1_contact_adding_table_subject.resx">
+      <DependentUpon>202111151947469_mig1_contact_adding_table_subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111152000342_mig1_contact_adding_datetime.resx">
+      <DependentUpon>202111152000342_mig1_contact_adding_datetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111152036314_mig1_message_table_adding.resx">
+      <DependentUpon>202111152036314_mig1_message_table_adding.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
