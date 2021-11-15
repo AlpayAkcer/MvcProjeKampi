@@ -94,6 +94,14 @@
     <Compile Include="Migrations\202111151133138_mig_content_IsActive_adding_dbTable.designer.cs">
       <DependentUpon>202111151133138_mig_content_IsActive_adding_dbTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111151501591_mig1_about_table_summary_adding.cs" />
+    <Compile Include="Migrations\202111151501591_mig1_about_table_summary_adding.designer.cs">
+      <DependentUpon>202111151501591_mig1_about_table_summary_adding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111151513034_mig1_add_about_picture_table.cs" />
+    <Compile Include="Migrations\202111151513034_mig1_add_about_picture_table.designer.cs">
+      <DependentUpon>202111151513034_mig1_add_about_picture_table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -128,6 +136,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111151133138_mig_content_IsActive_adding_dbTable.resx">
       <DependentUpon>202111151133138_mig_content_IsActive_adding_dbTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111151501591_mig1_about_table_summary_adding.resx">
+      <DependentUpon>202111151501591_mig1_about_table_summary_adding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111151513034_mig1_add_about_picture_table.resx">
+      <DependentUpon>202111151513034_mig1_add_about_picture_table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

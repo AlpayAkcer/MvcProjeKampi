@@ -1,0 +1,62 @@
+﻿
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-primary card-outline">
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default">
+                        Hakkımızda Metin Girişi
+                    </button>
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- ./row -->
+</div>
+<div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+        <form method="post" action="/About/AddAbout/">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Hakkımızda Metin Girişi</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Hakkımızda Başlık</label>
+                        <input type="text" class="form-control" name="Name" placeholder="Başlık Giriniz">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Özet</label>
+                        <input type="text" class="form-control" name="Summary" placeholder="Özet Giriniz">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Açıklama</label>
+                        <textarea rows="5" type="text" class="form-control" name="Description" placeholder="Açıklama Giriniz"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Resim</label>
+                        <input type="text" class="form-control" name="Picture" placeholder="Başlık Giriniz">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </form>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
