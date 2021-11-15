@@ -35,3 +35,6 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAcces
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_edit.resources
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_title_add.resources
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1_heading_IsActive_add.resources
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_image_size_change.resources
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_writer_status.resources
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_content_IsActive_adding_dbTable.resources

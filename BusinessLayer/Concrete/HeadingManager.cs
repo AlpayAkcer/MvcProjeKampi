@@ -35,11 +35,21 @@ namespace BusinessLayer.Concrete
 
         public void HeadingDelete(Heading heading)
         {
-            _headingDal.Delete(heading);
+            if (heading.IsActive == false)
+            {
+                heading.IsActive = true;
+            }
+            else
+            {
+                heading.IsActive = false;
+            }
+            _headingDal.Update(heading);
         }
 
         public void HeadingUpdate(Heading heading)
         {
+            //Deneme amaçlı yazıldı.
+            //heading.CreateDate = DateTime.Now;
             _headingDal.Update(heading);
         }
     }

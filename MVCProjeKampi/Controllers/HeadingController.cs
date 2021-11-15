@@ -26,6 +26,7 @@ namespace MVCProjeKampi.Controllers
             return View(headingValues);
         }
 
+
         [HttpGet]
         public ActionResult AddHeading()
         {
@@ -70,6 +71,38 @@ namespace MVCProjeKampi.Controllers
                 }
             }
             return View();
+        }
+
+
+        [HttpGet]
+        public ActionResult EditHeading(int id)
+        {
+            List<SelectListItem> valuecategory = (from x in cm.GetCategoryList()
+                                                  select new SelectListItem
+                                                  {
+                                                      Text = x.Name,
+                                                      Value = x.CategoryId.ToString()
+                                                  }).ToList();
+            ViewBag.vlc = valuecategory;
+
+            var HeadingValue = hm.GetByID(id);
+            return View(HeadingValue);
+        }
+
+        [HttpPost]
+        public ActionResult EditHeading(Heading p)
+        {
+            p.IsActive = true;
+            hm.HeadingUpdate(p);
+            return RedirectToAction("Index");
+        }
+
+
+        public ActionResult DeleteHeading(int id)
+        {
+            var HeadingValue = hm.GetByID(id);
+            hm.HeadingDelete(HeadingValue);
+            return RedirectToAction("Index");
         }
     }
 }

@@ -24,7 +24,7 @@ namespace EntityLayer.Concrete
         [StringLength(100)]
         public string WriterAbout { get; set; }
 
-        [StringLength(150)]
+        [StringLength(200)]
         public string Picture { get; set; }
 
         [StringLength(200)]
@@ -32,6 +32,8 @@ namespace EntityLayer.Concrete
 
         [StringLength(200)]
         public string Password { get; set; }
+
+        public bool IsActive { get; set; }
 
         public ICollection<Heading> Headings { get; set; }
         public ICollection<Content> Contents { get; set; }

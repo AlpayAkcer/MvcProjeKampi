@@ -15,6 +15,8 @@ namespace EntityLayer.Concrete
         public string Description { get; set; }
         public DateTime CreateDate { get; set; } = DateTime.Now;
 
+        public bool IsActive { get; set; }
+
         public int HeadingId { get; set; }
         public virtual Heading Heading { get; set; }
 

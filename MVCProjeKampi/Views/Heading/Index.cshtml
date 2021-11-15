@@ -7,50 +7,106 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+@{
+    string color = "";
+}
+
 <div class="col-12">
 
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Başlıkların Listesi</h3>
+            <h3 class="card-title">Yazar Başlık Listesi</h3> - <a href="/Heading/AddHeading/" class="link">Yeni Başlık Ekle</a>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
-            <table id="example1" class="table table-bordered table-striped">
+            <table id="example1" class="table table-bordered table-striped projects">
                 <thead>
                     <tr>
                         <th>
                             #
                         </th>
-                        <th>
-                            Başlık Adı
+                        <th style="width: 40%">
+                            Başlık
+                        </th>
+                        <th style="width: 20%">
+                            Oluşturan Yazar
                         </th>
                         <th>
                             Kategori
                         </th>
-                        <th>
-                            Yazar Adı Soyadı
+                        <th class="text-center">
+                            Status
                         </th>
-                        <th>
-                            Oluşturma Tarihi
-                        </th>
-                        <th>
-                            İşlemler
+                        <th style="width: 20%">
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var item in Model)
                     {
+                        if (item.Category.Name == "Asp.Net")
+                        {
+                            color = "badge badge-success";
+                        }
+                        if (item.Category.Name == "Jquery")
+                        {
+                            color = "badge badge-warning";
+                        }
+                        if (item.Category.Name == "Yazılım")
+                        {
+                            color = "badge badge-primary";
+                        }
+                        if (item.Category.Name == "C#")
+                        {
+                            color = "badge badge-danger";
+                        }
+
                         <tr>
-                            <td>@item.HeadingId</td>
-                            <td>@item.Name</td>
-                            <td>@item.Category.Name</td>
-                            <td>@item.Writer.Name @item.Writer.Surname</td>
-                            <td>@(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy"))</td>
                             <td>
-                                <a href="/Heading/DeleteHeading/@item.HeadingId" class="btn btn-danger">Sil</a>
-                                <a href="/Heading/EditHeading/@item.HeadingId" class="btn btn-warning">Güncelle</a>
-                                <a href="#" class="btn btn-primary">Başlıklar</a>
+                                @item.HeadingId
+                            </td>
+                            <td>
+                                <a>
+                                    @item.Name
+                                </a>
+                                <br />
+                                <small>
+                                    @(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy"))
+                                </small>
+                            </td>
+                            <td>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <img alt="@item.Writer.Name @item.Writer.Surname" class="table-avatar" src="@item.Writer.Picture">
+                                        - @item.Writer.Name @item.Writer.Surname
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                @if (item.IsActive == true)
+                                {
+                                    <span class="badge badge-success">Aktif</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-danger">Pasif</span>
+                                }
+                            </td>
+                            <td class="project-state">
+                                <span class="@color">@item.Category.Name</span>
+                            </td>
+                            <td>
+                                @if (item.IsActive == false)
+                                {
+                                    <a href="/Heading/DeleteHeading/@item.HeadingId" class="btn btn-success">Aktif</a>
+                                }
+                                else
+                                {
+                                    <a href="/Heading/DeleteHeading/@item.HeadingId" class="btn btn-danger">Pasif</a>
+                                }
+
+                                <a href="/Heading/EditHeading/@item.HeadingId" class="btn btn-warning">Düzenle</a>
+                                <a href="/Content/ContentByHeading/@item.HeadingId" class="btn btn-primary">Yazılar</a>
                             </td>
                         </tr>
                     }
@@ -59,5 +115,4 @@
         </div>
         <!-- /.card-body -->
     </div>
-    <!-- /.card -->
 </div>

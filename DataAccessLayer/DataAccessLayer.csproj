@@ -82,6 +82,18 @@
     <Compile Include="Migrations\202111131846501_mig1_heading_IsActive_add.designer.cs">
       <DependentUpon>202111131846501_mig1_heading_IsActive_add.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111150753308_mig_writer_image_size_change.cs" />
+    <Compile Include="Migrations\202111150753308_mig_writer_image_size_change.designer.cs">
+      <DependentUpon>202111150753308_mig_writer_image_size_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111150821592_mig_add_writer_status.cs" />
+    <Compile Include="Migrations\202111150821592_mig_add_writer_status.designer.cs">
+      <DependentUpon>202111150821592_mig_add_writer_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111151133138_mig_content_IsActive_adding_dbTable.cs" />
+    <Compile Include="Migrations\202111151133138_mig_content_IsActive_adding_dbTable.designer.cs">
+      <DependentUpon>202111151133138_mig_content_IsActive_adding_dbTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -107,6 +119,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111131846501_mig1_heading_IsActive_add.resx">
       <DependentUpon>202111131846501_mig1_heading_IsActive_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111150753308_mig_writer_image_size_change.resx">
+      <DependentUpon>202111150753308_mig_writer_image_size_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111150821592_mig_add_writer_status.resx">
+      <DependentUpon>202111150821592_mig_add_writer_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111151133138_mig_content_IsActive_adding_dbTable.resx">
+      <DependentUpon>202111151133138_mig_content_IsActive_adding_dbTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
