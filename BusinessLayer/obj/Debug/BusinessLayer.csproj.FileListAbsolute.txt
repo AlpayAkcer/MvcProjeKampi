@@ -120,6 +120,13 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\EntityFrame
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\EntityLayer.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\FluentValidation.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.Helpers.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.Mvc.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.Razor.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.WebPages.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\DataAccessLayer.pdb
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\EntityLayer.pdb
@@ -127,6 +134,12 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\EntityLayer
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\FluentValidation.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.Helpers.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.Mvc.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.Razor.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.WebPages.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
