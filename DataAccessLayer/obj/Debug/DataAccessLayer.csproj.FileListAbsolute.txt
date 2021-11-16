@@ -57,3 +57,5 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAcces
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_image_adding_class.resources
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_adding_admin_tb.resources

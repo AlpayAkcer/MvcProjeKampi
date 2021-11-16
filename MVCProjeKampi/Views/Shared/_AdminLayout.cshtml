@@ -11,11 +11,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Admin Yönetim Paneli</title>
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="~/AdminLTE-3.0.4/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/Theme/AdminTheme/plugins/fontawesome-free/css/all.min.css">
     <!-- IonIcons -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="~/AdminLTE-3.0.4/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="/Theme/AdminTheme/dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -132,7 +132,7 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="~/AdminLTE-3.0.4/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        <img src="/AdminLTE-3.0.4/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
                         <a href="#" class="d-block">User Name</a>
@@ -154,12 +154,6 @@
                                     <a href="#" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Yetkilendirmeler</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Galeri</p>
                                     </a>
                                 </li>
                             </ul>
@@ -294,6 +288,14 @@
                             </a>
                         </li>
                         <li class="nav-item has-treeview">
+                            <a href="/Gallery/" class="nav-link">
+                                <i class="nav-icon fas fa-archive"></i>
+                                <p>
+                                    Galeri
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
                             <a href="/About/" class="nav-link">
                                 <i class="nav-icon fas fa-comments"></i>
                                 <p>
@@ -337,22 +339,28 @@
     <!-- ./wrapper -->
     <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
-    <script src="~/AdminLTE-3.0.4/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="~/AdminLTE-3.0.4/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE -->
-    <script src="~/AdminLTE-3.0.4/dist/js/adminlte.js"></script>
-    <!-- OPTIONAL SCRIPTS -->
-    <script src="~/AdminLTE-3.0.4/plugins/chart.js/Chart.min.js"></script>
-    <script src="~/AdminLTE-3.0.4/dist/js/demo.js"></script>
-    <script src="~/AdminLTE-3.0.4/dist/js/pages/dashboard3.js"></script>
-
-    <!-- DataTables -->
-    <script src="~/AdminLTE-3.0.4/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="~/AdminLTE-3.0.4/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="~/AdminLTE-3.0.4/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="~/AdminLTE-3.0.4/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-
+    <script src="/Theme/AdminTheme/plugins/jquery/jquery.min.js"></script>
+    <script src="/Theme/AdminTheme/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/Theme/AdminTheme/dist/js/adminlte.js"></script>
+    <script src="/Theme/AdminTheme/plugins/chart.js/Chart.min.js"></script>
+    <script src="/Theme/AdminTheme/dist/js/demo.js"></script>
+    <script src="/Theme/AdminTheme/dist/js/pages/dashboard3.js"></script>
+    <script src="/Theme/AdminTheme/plugins/filterizr/jquery.filterizr.min.js"></script>
+    <script src="/Theme/AdminTheme/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Theme/AdminTheme/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/Theme/AdminTheme/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/Theme/AdminTheme/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="/Theme/AdminTheme/plugins/summernote/summernote-bs4.css">
+    <script src="/Theme/AdminTheme/plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
+    <link rel="stylesheet" href="/Theme/AdminTheme/plugins/ekko-lightbox/ekko-lightbox.css">
+    <script src="/Theme/AdminTheme/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(function () {
+            //Add text editor
+            $('#compose-textarea').summernote()
+        })
+    </script>
     <script>
         $(function () {
             $("#example1").DataTable({
@@ -369,6 +377,22 @@
                 "responsive": true,
             });
         });
+    </script>
+    <script>
+        $(function () {
+            $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+                event.preventDefault();
+                $(this).ekkoLightbox({
+                    alwaysShowClose: true
+                });
+            });
+
+            $('.filter-container').filterizr({ gutterPixels: 3 });
+            $('.btn[data-filter]').on('click', function () {
+                $('.btn[data-filter]').removeClass('active');
+                $(this).addClass('active');
+            });
+        })
     </script>
 </body>
 </html>

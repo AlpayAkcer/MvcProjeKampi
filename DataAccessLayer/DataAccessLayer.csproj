@@ -73,9 +73,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IAboutDal.cs" />
+    <Compile Include="Abstract\IAdminDal.cs" />
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
+    <Compile Include="Abstract\IImageFilesDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
     <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
@@ -83,10 +85,12 @@
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
     <Compile Include="EntityFramework\EfAboutDal.cs" />
+    <Compile Include="EntityFramework\EfAdminDal.cs" />
     <Compile Include="EntityFramework\EfCategoryDal.cs" />
     <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
+    <Compile Include="EntityFramework\EfImageFilesDal.cs" />
     <Compile Include="EntityFramework\EfMessageDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202111101959508_mig1.cs" />
@@ -141,6 +145,14 @@
     <Compile Include="Migrations\202111152126486_mig1_message_update_table.designer.cs">
       <DependentUpon>202111152126486_mig1_message_update_table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111161034084_mig_image_adding_class.cs" />
+    <Compile Include="Migrations\202111161034084_mig_image_adding_class.designer.cs">
+      <DependentUpon>202111161034084_mig_image_adding_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111161100254_mig_adding_admin_tb.cs" />
+    <Compile Include="Migrations\202111161100254_mig_adding_admin_tb.designer.cs">
+      <DependentUpon>202111161100254_mig_adding_admin_tb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -193,6 +205,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111152126486_mig1_message_update_table.resx">
       <DependentUpon>202111152126486_mig1_message_update_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111161034084_mig_image_adding_class.resx">
+      <DependentUpon>202111161034084_mig_image_adding_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111161100254_mig_adding_admin_tb.resx">
+      <DependentUpon>202111161100254_mig_adding_admin_tb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
