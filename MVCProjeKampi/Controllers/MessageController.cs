@@ -47,6 +47,7 @@ namespace MVCProjeKampi.Controllers
         public ActionResult NewMessage(Message message, string button)
         {
             ValidationResult validationResult = messageValidator.Validate(message);
+
             if (button == "add")
             {
                 if (validationResult.IsValid)
