@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
@@ -40,7 +41,7 @@ namespace MVCProjeKampi.Controllers
             List<SelectListItem> valuewriter = (from x in wm.GetList()
                                                 select new SelectListItem
                                                 {
-                                                    Text = x.Name + " " + x.Surname,
+                                                    Text = x.WriterName + " " + x.WriterSurName,
                                                     Value = x.WriterId.ToString()
                                                 }).ToList();
 
@@ -48,6 +49,18 @@ namespace MVCProjeKampi.Controllers
             ViewBag.writerValue = valuewriter;
 
             return View();
+        }
+
+        public ActionResult HeadingByCategory(int id)
+        {
+            var headingCategory = hm.HeadingByCategory(id);
+            return View(headingCategory);
+        }
+
+        public ActionResult HeadingByWriter(int id)
+        {
+            var headingWriter = hm.HeadingByWriter(id);
+            return View(headingWriter);
         }
 
         [HttpPost]

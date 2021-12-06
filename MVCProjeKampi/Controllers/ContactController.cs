@@ -27,25 +27,43 @@ namespace MVCProjeKampi.Controllers
             return View(getcontactValues);
         }
 
+        public ActionResult ContactDelete(int id)
+        {
+            var contactValues = cm.GetByID(id);
+            cm.ContactDelete(contactValues);
+            return RedirectToAction("Index");
+        }
+
         public PartialViewResult ContactMenuPartial()
         {
+            string session = (string)Session["AdminMail"];
+
             var contact = cm.GetList().Count();
             ViewBag.contact = contact;
 
-            var sendMail = mm.GetMessageSendBox().Count();
+            var sendMail = mm.GetListSendbox(session).Count();
             ViewBag.sendMail = sendMail;
 
-            var receiverMail = mm.GetMessagesInbox().Count();
+            var receiverMail = mm.GetListInbox(session).Count();
             ViewBag.receiverMail = receiverMail;
 
-            var draftMail = mm.GetMessageSendBox().Where(m => m.IsDraft == true).Count();
+            var draftMail = mm.GetListDraft(session).Count(); //GetListSendbox().Where(m => m.IsDraft == true).Count();
             ViewBag.draftMail = draftMail;
 
-            var readMessage = mm.GetMessagesInbox().Where(m => m.IsRead == true).Count();
-            ViewBag.readMessage = readMessage;
+            //var trashMail = mm.GetListTrash().Count();
+            //ViewBag.trashMail = trashMail;
 
-            var unreadMessage = mm.GetAllRead().Count();
-            ViewBag.unreadMessage = unreadMessage;
+            //var readMail = mm.GetReadList(session).Count;
+            //ViewBag.readMail = readMail;
+
+            //var unReadMail = mm.GetUnReadList(session).Count;
+            //ViewBag.unReadMail = unReadMail;
+
+            //var importantMail = mm.GetListImportant(session).Count();
+            //ViewBag.importantMail = importantMail;
+
+            //var spamMail = mm.GetListSpam(session).Count();
+            //ViewBag.spamMail = spamMail;
 
             return PartialView();
         }

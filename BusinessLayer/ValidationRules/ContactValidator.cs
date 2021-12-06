@@ -12,8 +12,8 @@ namespace BusinessLayer.ValidationRules
     {
         public ContactValidator()
         {
-            RuleFor(x => x.Email).NotEmpty().WithMessage("Mail Adresini Boş Geçmeyiniz.");
-            RuleFor(x => x.Email).MinimumLength(3).WithMessage("En Az 3 Karakter Girilmelidir.");
+            RuleFor(x => x.UserMail).NotEmpty().WithMessage("Mail Adresini Boş Geçmeyiniz.");
+            RuleFor(x => x.UserMail).MinimumLength(3).WithMessage("En Az 3 Karakter Girilmelidir.");
 
             RuleFor(x => x.UserName).MinimumLength(3).WithMessage("En Az 3 Karakter Girilmelidir.");
             RuleFor(x => x.Subject).NotEmpty().WithMessage("Konu Başlığını Boş Geçmeyiniz.");

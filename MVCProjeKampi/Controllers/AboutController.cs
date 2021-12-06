@@ -29,6 +29,22 @@ namespace MVCProjeKampi.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult AboutIsActive(int id)
+        {
+            var aboutValue = aboutmanager.GetByID(id);
+
+            if (aboutValue.IsActive == true)
+            {
+                aboutValue.IsActive = false;
+            }
+            else
+            {
+                aboutValue.IsActive = true;
+            }
+            aboutmanager.AboutUpdate(aboutValue);
+            return RedirectToAction("Index");
+        }
+
         public PartialViewResult aboutPartial()
         {
             return PartialView();

@@ -1,0 +1,71 @@
+﻿@using EntityLayer.Concrete
+@*@model PagedList.IPagedList<Admin>*@
+@model List<Admin>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@{
+    string color = "";
+    string buttonTyp = "";
+    string status = "";
+}
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Kullanıcı Adı</th>
+        <th>Yetki</th>
+        <th>Yetki Detay</th>
+        <th>Durumu</th>
+        <th>Durum Değiştir</th>
+        <th>Yetki Degiştir</th>
+        <th>Bilgilerini Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        if (item.AdminStatus == true)
+        {
+            status = "Pasif Yap";
+            buttonTyp = "btn btn-danger";
+        }
+        if (item.AdminStatus == false)
+        {
+            status = "Aktif Yap";
+            buttonTyp = "btn btn-success";
+        }
+
+        <tr>
+            <th>@item.AdminId</th>
+            <td style="text-align: center">@item.AdminUserName</td>
+            <td style="text-align: center;background-color: gold"><b>@item.Role.RoleName</b></td>
+            <td style="text-align: center">@item.Role.Description</td>
+            <td style="text-align: center">
+                @{ if (item.AdminStatus == true)
+                    {
+                        <b style="color: green "> Aktif</b> }
+                    else
+                    {
+                        <b style="color: red">Pasif</b> }
+                }
+            </td>
+            <td style="text-align: center">
+                <a href="/Authorization/ChangeAdminStatus/@item.AdminId" class="@buttonTyp">@status</a>
+            </td>
+            <td style="text-align: center">
+                <a href="/Authorization/UpdateRole/@item.AdminId" class="btn btn-primary">Yetkisini Değiştir</a>
+            </td>
+            @*<td><a href="/Authorization/UpdateRole/@item.AdminId" class="btn btn-warning">Yetkisini Değiştir</a></td>*@
+            <td style="text-align: center">
+                <a href="/Authorization/UpdateProfile/@item.AdminId" class="btn btn-warning">Bilgilerini Güncelle</a>
+            </td>
+
+
+            <td style="text-align: center"><a href="/Authorization/DeleteAdmin/@item.AdminId" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+<a href="/Authorization/AddAdmin/" class="btn btn-info">Yeni Admin Tanımla</a>
+
+@*@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))*@

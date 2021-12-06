@@ -26,7 +26,7 @@
                     <div class="mailbox-read-info">
                         <h5> Konu: @Html.DisplayFor(x => x.Subject)</h5>
                         <h6>
-                            Mail:  @Html.DisplayFor(x => x.Email)
+                            Mail:  @Html.DisplayFor(x => x.UserMail)
                             <span class="mailbox-read-time float-right">15 Feb. 2015 11:03 PM</span>
                         </h6>
                     </div>
@@ -34,7 +34,7 @@
                     <div class="mailbox-read-message">
 
                         <p>
-                            @Html.DisplayFor(x => x.Messge)
+                            @Html.DisplayFor(x => x.Message)
                         </p>
 
                     </div>
@@ -42,14 +42,14 @@
                 </div>
 
 
-               
+
                 <!-- /.card-footer -->
                 <div class="card-footer">
                     <div class="float-right">
                         <button type="button" class="btn btn-default"><i class="fas fa-reply"></i> Reply</button>
                         <button type="button" class="btn btn-default"><i class="fas fa-share"></i> Forward</button>
                     </div>
-                    <button type="button" class="btn btn-default"><i class="far fa-trash-alt"></i> Delete</button>
+                    <a href="/Contact/ContactDelete/@Model.ContactId" class="btn btn-danger"><i class="far fa-trash-alt"></i> Sil</a>
                     <button type="button" class="btn btn-default"><i class="fas fa-print"></i> Print</button>
                 </div>
                 <!-- /.card-footer -->

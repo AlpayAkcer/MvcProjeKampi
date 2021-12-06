@@ -11,9 +11,10 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int HeadingId { get; set; }
+
         [StringLength(70)]
         public string Name { get; set; }
-        public DateTime CreateDate { get; set; } = DateTime.Now;
+        public DateTime CreateDate { get; set; }
 
         public bool IsActive { get; set; }
 

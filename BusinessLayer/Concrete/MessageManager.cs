@@ -12,58 +12,56 @@ namespace BusinessLayer.Concrete
     public class MessageManager : IMessageService
     {
         IMessageDal _messageDal;
-
         public MessageManager(IMessageDal messageDal)
         {
             _messageDal = messageDal;
         }
-
-        public void Delete(Message message)
+        public Message GetById(int id)
         {
-            _messageDal.Delete(message);
+            return _messageDal.Get(x => x.MessageId == id);
         }
 
-        public List<Message> GetAllRead()
+        public List<Message> GetListDraft(string p)
         {
-            return _messageDal.List(m => m.ReceiverMail == "info@alpayakcer.com").Where(m => m.IsRead == false).ToList();
+            return _messageDal.List(x => x.Draft == true && x.SenderMail == p && x.SenderStatus == true && x.ReceiverDelete == false).OrderByDescending(y => y.MessageDate).ToList();
         }
 
-        public Message GetById(int Id)
+        public List<Message> GetListInbox(string p)
         {
-            return _messageDal.Get(m => m.MessageId == Id);
+            return _messageDal.List(x => x.ReceiverMail == p && x.ReceiverStatus == false && x.Draft == false).OrderBy(x => x.MessageDate).OrderByDescending(y => y.MessageDate).ToList();
         }
 
-        public List<Message> GetMessageSendBox()
+        public List<Message> GetListSendbox(string p)
         {
-            return _messageDal.List(m => m.SenderMail == "info@alpayakcer.com");
+            return _messageDal.List(x => x.SenderMail == p && x.Draft == false && x.SenderStatus == true && x.ReceiverDelete == false).OrderByDescending(y => y.MessageDate).ToList();
         }
 
-        public List<Message> GetMessageSendBox(string sender)
+        public List<Message> GetListTrash(string p)
         {
-            return _messageDal.List(m => m.SenderMail == sender);
+            return _messageDal.List(x => x.ReceiverStatus == true && x.ReceiverMail == p && x.ReceiverDelete == false).OrderByDescending(y => y.MessageDate).ToList();
         }
 
-        public List<Message> GetMessagesInbox()
+        public List<Message> GetUnReadMessageForInbox(string p)
         {
-            return _messageDal.List(m => m.ReceiverMail == "info@alpayakcer.com");
+            return _messageDal.List(x => x.ReceiverMail == p && x.ReceiverStatus == false && x.Read == false && x.Draft == false);
         }
 
-        public List<Message> GetMessagesInbox(string receiver)
-        {
-            return _messageDal.List(m => m.ReceiverMail == receiver);
-        }
-
-        public void Insert(Message message)
+        public void MessageAdd(Message message)
         {
             _messageDal.Insert(message);
         }
 
-        public List<Message> IsDraft()
+        public void MessageDelete(Message message)
         {
-            return _messageDal.List(m => m.IsDraft == true);
+            _messageDal.Update(message);
         }
 
-        public void Update(Message message)
+        public void MessageFullyDelete(Message message)
+        {
+            _messageDal.Update(message);
+        }
+
+        public void MessageUpdate(Message message)
         {
             _messageDal.Update(message);
         }

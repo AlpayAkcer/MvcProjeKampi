@@ -40,7 +40,7 @@
             <div class="inner">
                 <h3>@ViewBag.writerNameContains</h3>
 
-                <p>Yazar İsimleri Toplamı</p>
+                <p>Yazar İsimlerinde A harfi Olanlar</p>
             </div>
             <div class="icon">
                 <i class="ion ion-person-add"></i>
@@ -73,10 +73,122 @@
                 <p>Aktif Kategori Sayısı</p>
             </div>
             <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h3>@ViewBag.totalHeadingList</h3>
+
+                <p>Toplam Başlık Sayısı</p>
+            </div>
+            <div class="icon">
                 <i class="ion ion-pie-graph"></i>
             </div>
 
         </div>
     </div>
     <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-purple">
+            <div class="inner">
+                <h3>@ViewBag.totalContentList</h3>
+
+                <p>Toplam İçerik Sayısı</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-danger">
+            <div class="inner">
+                <h3>@ViewBag.totalAdminList</h3>
+
+                <p>Toplam <b>ADMIN</b> Sayısı</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-person-add"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- ./col -->
+    <hr />
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h3>@ViewBag.totalMessageList</h3>
+
+                <p>Toplam <b>Mesaj</b> Sayısı</p>
+            </div>
+            <div class="icon">
+                <i class="nav-icon fas fa-envelope"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-success">
+            <div class="inner">
+                <h3>@ViewBag.InRead</h3>
+
+                <p>Okunmuş <b>Mesaj</b> Sayısı</p>
+            </div>
+            <div class="icon">
+                <i class="nav-icon fas fa-envelope-open"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h3>@ViewBag.IsDraft</h3>
+                <p>Taslaklardaki <b>Mesaj</b> Sayısı</p>
+            </div>
+            <div class="icon">
+                <i class="nav-icon fas fa-envelope-square"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-fuchsia">
+            <div class="inner">
+                <h3>@ViewBag.IsTrash</h3>
+                <p>Çöp Kutusundaki Mesajlar</p>
+            </div>
+            <div class="icon">
+                <i class="nav-icon fas fa-eraser"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- ./col -->
+
 </div>

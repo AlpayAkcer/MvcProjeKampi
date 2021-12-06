@@ -29,8 +29,8 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\bin\Debug\System.Web.Ra
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\bin\Debug\System.Web.WebPages.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.pdb
-C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache

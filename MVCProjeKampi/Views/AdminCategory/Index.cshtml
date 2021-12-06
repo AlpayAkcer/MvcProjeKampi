@@ -7,62 +7,68 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div class="col-12">
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
 
-    <div class="card">
-        <div class="card-header">
-            <h3 class="card-title">Kategori Listesi</h3>
-        </div>
-        <!-- /.card-header -->
-        <div class="card-body">
-            <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th>
-                            #
-                        </th>
-                        <th>
-                            Kategori Adı
-                        </th>
-                        <th>
-                            Durum
-                        </th>
-                        <th>
-                            Oluşturma Tarihi
-                        </th>
-                        <th>
-                            İşlemler
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>@item.CategoryId</td>
-                            <td>@item.Name</td>
-                            <td class="align-self-center">
-                                @if (item.IsActive == false)
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Kategori Listesi</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        #
+                                    </th>
+                                    <th>
+                                        Kategori Adı
+                                    </th>
+                                    <th>
+                                        Durum
+                                    </th>
+                                    <th>
+                                        Oluşturma Tarihi
+                                    </th>
+                                    <th>
+                                        İşlemler
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
                                 {
-                                    <small class="badge badge-danger">Pasif</small>
+                                    <tr>
+                                        <td>@item.CategoryId</td>
+                                        <td>@item.Name</td>
+                                        <td class="align-self-center">
+                                            @if (item.IsActive == false)
+                                            {
+                                                <small class="badge badge-danger">Pasif</small>
+                                            }
+                                            else
+                                            {
+                                                <small class="badge badge-success">Aktif</small>
+                                            }
+                                        </td>
+                                        <td>@(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy"))</td>
+                                        <td>
+                                            <a href="/AdminCategory/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a>
+                                            <a href="/AdminCategory/EditCategory/@item.CategoryId" class="btn btn-warning">Güncelle</a>
+                                            <a href="/Heading/HeadingByCategory/@item.CategoryId" class="btn btn-primary">Başlıklar</a>
+                                        </td>
+                                    </tr>
                                 }
-                                else
-                                {
-                                    <small class="badge badge-success">Aktif</small>
-                                }
-                            </td>
-                            <td>@item.CreateDate.Year</td>
-                            <td>
-                                <a href="/AdminCategory/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a>
-                                <a href="/AdminCategory/EditCategory/@item.CategoryId" class="btn btn-warning">Güncelle</a>
-                                <a href="#" class="btn btn-primary">Başlıklar</a>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
         </div>
-        <!-- /.card-body -->
     </div>
-    <!-- /.card -->
-</div>
+</section>

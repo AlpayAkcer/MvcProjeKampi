@@ -81,6 +81,8 @@
     <Compile Include="Abstract\IHeadingDal.cs" />
     <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="Abstract\IRoleDal.cs" />
+    <Compile Include="Abstract\ISkillDal.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
@@ -92,67 +94,9 @@
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
     <Compile Include="EntityFramework\EfImageFilesDal.cs" />
     <Compile Include="EntityFramework\EfMessageDal.cs" />
+    <Compile Include="EntityFramework\EfRoleDal.cs" />
+    <Compile Include="EntityFramework\EfSkillDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
-    <Compile Include="Migrations\202111101959508_mig1.cs" />
-    <Compile Include="Migrations\202111101959508_mig1.Designer.cs">
-      <DependentUpon>202111101959508_mig1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111121946097_mig_writer_edit.cs" />
-    <Compile Include="Migrations\202111121946097_mig_writer_edit.designer.cs">
-      <DependentUpon>202111121946097_mig_writer_edit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111130908273_mig_writer_title_add.cs" />
-    <Compile Include="Migrations\202111130908273_mig_writer_title_add.designer.cs">
-      <DependentUpon>202111130908273_mig_writer_title_add.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111131846501_mig1_heading_IsActive_add.cs" />
-    <Compile Include="Migrations\202111131846501_mig1_heading_IsActive_add.designer.cs">
-      <DependentUpon>202111131846501_mig1_heading_IsActive_add.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111150753308_mig_writer_image_size_change.cs" />
-    <Compile Include="Migrations\202111150753308_mig_writer_image_size_change.designer.cs">
-      <DependentUpon>202111150753308_mig_writer_image_size_change.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111150821592_mig_add_writer_status.cs" />
-    <Compile Include="Migrations\202111150821592_mig_add_writer_status.designer.cs">
-      <DependentUpon>202111150821592_mig_add_writer_status.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111151133138_mig_content_IsActive_adding_dbTable.cs" />
-    <Compile Include="Migrations\202111151133138_mig_content_IsActive_adding_dbTable.designer.cs">
-      <DependentUpon>202111151133138_mig_content_IsActive_adding_dbTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111151501591_mig1_about_table_summary_adding.cs" />
-    <Compile Include="Migrations\202111151501591_mig1_about_table_summary_adding.designer.cs">
-      <DependentUpon>202111151501591_mig1_about_table_summary_adding.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111151513034_mig1_add_about_picture_table.cs" />
-    <Compile Include="Migrations\202111151513034_mig1_add_about_picture_table.designer.cs">
-      <DependentUpon>202111151513034_mig1_add_about_picture_table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111151947469_mig1_contact_adding_table_subject.cs" />
-    <Compile Include="Migrations\202111151947469_mig1_contact_adding_table_subject.designer.cs">
-      <DependentUpon>202111151947469_mig1_contact_adding_table_subject.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111152000342_mig1_contact_adding_datetime.cs" />
-    <Compile Include="Migrations\202111152000342_mig1_contact_adding_datetime.designer.cs">
-      <DependentUpon>202111152000342_mig1_contact_adding_datetime.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111152036314_mig1_message_table_adding.cs" />
-    <Compile Include="Migrations\202111152036314_mig1_message_table_adding.designer.cs">
-      <DependentUpon>202111152036314_mig1_message_table_adding.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111152126486_mig1_message_update_table.cs" />
-    <Compile Include="Migrations\202111152126486_mig1_message_update_table.designer.cs">
-      <DependentUpon>202111152126486_mig1_message_update_table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111161034084_mig_image_adding_class.cs" />
-    <Compile Include="Migrations\202111161034084_mig_image_adding_class.designer.cs">
-      <DependentUpon>202111161034084_mig_image_adding_class.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202111161100254_mig_adding_admin_tb.cs" />
-    <Compile Include="Migrations\202111161100254_mig_adding_admin_tb.designer.cs">
-      <DependentUpon>202111161100254_mig_adding_admin_tb.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -165,53 +109,6 @@
       <Project>{5B2D8050-C06A-449A-9657-15AA4A743C03}</Project>
       <Name>EntityLayer</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202111101959508_mig1.resx">
-      <DependentUpon>202111101959508_mig1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111121946097_mig_writer_edit.resx">
-      <DependentUpon>202111121946097_mig_writer_edit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111130908273_mig_writer_title_add.resx">
-      <DependentUpon>202111130908273_mig_writer_title_add.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111131846501_mig1_heading_IsActive_add.resx">
-      <DependentUpon>202111131846501_mig1_heading_IsActive_add.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111150753308_mig_writer_image_size_change.resx">
-      <DependentUpon>202111150753308_mig_writer_image_size_change.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111150821592_mig_add_writer_status.resx">
-      <DependentUpon>202111150821592_mig_add_writer_status.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111151133138_mig_content_IsActive_adding_dbTable.resx">
-      <DependentUpon>202111151133138_mig_content_IsActive_adding_dbTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111151501591_mig1_about_table_summary_adding.resx">
-      <DependentUpon>202111151501591_mig1_about_table_summary_adding.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111151513034_mig1_add_about_picture_table.resx">
-      <DependentUpon>202111151513034_mig1_add_about_picture_table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111151947469_mig1_contact_adding_table_subject.resx">
-      <DependentUpon>202111151947469_mig1_contact_adding_table_subject.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111152000342_mig1_contact_adding_datetime.resx">
-      <DependentUpon>202111152000342_mig1_contact_adding_datetime.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111152036314_mig1_message_table_adding.resx">
-      <DependentUpon>202111152036314_mig1_message_table_adding.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111152126486_mig1_message_update_table.resx">
-      <DependentUpon>202111152126486_mig1_message_update_table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111161034084_mig_image_adding_class.resx">
-      <DependentUpon>202111161034084_mig_image_adding_class.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111161100254_mig_adding_admin_tb.resx">
-      <DependentUpon>202111161100254_mig_adding_admin_tb.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

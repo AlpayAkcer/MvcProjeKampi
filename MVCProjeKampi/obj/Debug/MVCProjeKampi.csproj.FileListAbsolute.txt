@@ -305,6 +305,8 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\FluentValidation.
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\Newtonsoft.Json.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\PagedList.dll
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\PagedList.Mvc.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.Helpers.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.Mvc.dll
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.Optimization.dll
@@ -322,6 +324,8 @@ C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityLayer.dll.c
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityFramework.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\EntityFramework.SqlServer.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\FluentValidation.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\PagedList.xml
+C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\PagedList.Mvc.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.Helpers.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.Mvc.xml
 C:\Users\alpay\Belgeler\GitHub\MvcProjeKampi\MVCProjeKampi\bin\System.Web.Optimization.xml

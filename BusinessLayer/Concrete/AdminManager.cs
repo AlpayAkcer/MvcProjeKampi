@@ -8,12 +8,10 @@ namespace BusinessLayer.Concrete
     public class AdminManager : IAdminService
     {
         IAdminDal _adminDal;
-
         public AdminManager(IAdminDal adminDal)
         {
             _adminDal = adminDal;
         }
-
         public void AdminAdd(Admin admin)
         {
             _adminDal.Insert(admin);
@@ -21,7 +19,7 @@ namespace BusinessLayer.Concrete
 
         public void AdminDelete(Admin admin)
         {
-            _adminDal.Delete(admin);
+            _adminDal.Update(admin);
         }
 
         public void AdminUpdate(Admin admin)
@@ -29,7 +27,7 @@ namespace BusinessLayer.Concrete
             _adminDal.Update(admin);
         }
 
-        public Admin GetByAdminID(int id)
+        public Admin GetById(int id)
         {
             return _adminDal.Get(x => x.AdminId == id);
         }

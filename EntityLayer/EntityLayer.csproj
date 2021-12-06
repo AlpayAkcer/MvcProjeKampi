@@ -80,7 +80,11 @@
     <Compile Include="Concrete\Heading.cs" />
     <Compile Include="Concrete\ImageFiles.cs" />
     <Compile Include="Concrete\Message.cs" />
+    <Compile Include="Concrete\Role.cs" />
+    <Compile Include="Concrete\Skill.cs" />
     <Compile Include="Concrete\Writer.cs" />
+    <Compile Include="DTO\AdminLogInDto.cs" />
+    <Compile Include="DTO\WriterLoginDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

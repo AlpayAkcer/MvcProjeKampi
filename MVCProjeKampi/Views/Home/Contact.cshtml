@@ -1,17 +1,28 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "TalentCard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<!-- Contact -->
+<div class="lx-contact lx-blocs">
+    <h3><span>Contact</span></h3>
+    <form action="#contact" method="post" autocomplete="off">
+        <h4>LEAVE ME A MESSAGE</h4>
+        <p>You can ask me about anything here, just type your name and e-mail and I'll answer you as soon as possible.</p>
+        <div class="lx-contact-saved"></div>
+        <div class="lx-contact-field">
+            <input type="text" name="fullname" placeholder="Your fullname here ..." />
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="lx-contact-field">
+            <input type="text" name="email" placeholder="Your e-mail here ..." />
+            <i class="fa fa-envelope-o"></i>
+        </div>
+        <div class="lx-contact-field">
+            <textarea name="message" placeholder="Your message here ..."></textarea>
+            <i class="fa fa-comment"></i>
+        </div>
+        <input type="button" name="submit" value="GET IN TOUCH" />
+    </form>
+    <div class="lx-clear-fix"></div>
+</div>
+<!-- End Contact -->

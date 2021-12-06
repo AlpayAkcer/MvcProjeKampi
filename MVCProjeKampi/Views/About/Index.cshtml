@@ -30,7 +30,7 @@
                         <th>
                             Oluşturma Tarihi
                         </th>
-
+                        <th>Düzenleme</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -49,8 +49,17 @@
                                     <small class="badge badge-success">Aktif</small>
                                 }
                             </td>
-                            <td>@item.CreateDate.Year</td>
-
+                            <td>@(((DateTime)item.CreateDate).ToString("dd-MMM-yyyy"))</td>
+                            <td>
+                                @if (item.IsActive == false)
+                                {
+                                    <a href="/About/AboutIsActive/@item.AboutId" class="btn btn-success">Aktif</a>
+                                }
+                                else
+                                {
+                                    <a href="/About/AboutIsActive/@item.AboutId" class="btn btn-danger">Pasif</a>
+                                }
+                            </td>
                         </tr>
                     }
                 </tbody>

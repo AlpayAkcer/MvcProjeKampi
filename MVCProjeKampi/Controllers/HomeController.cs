@@ -26,5 +26,10 @@ namespace MVCProjeKampi.Controllers
 
             return View();
         }
+
+        public PartialViewResult LayoutMenuPartial()
+        {
+            return PartialView();
+        }
     }
 }

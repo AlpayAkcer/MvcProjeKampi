@@ -1,0 +1,27 @@
+﻿@using EntityLayer.Concrete
+@model List<Talent>
+@{
+    ViewBag.Title = "TalentCard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="lx-g8-7-f">
+    <div class="lx-skills talent" style="display: block; overflow: auto;">
+        @foreach (var item in Model)
+        {
+
+            <div class="lx-bars-chart">
+                <div class="lx-bar" data-max="@item.Percent">
+                    <p>@item.Name</p>
+                    <div class="lx-bar-counter">@item.Percent</div>
+                    <div class="lx-bar-bg">
+                        <div class="lx-bar-fill">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </div>
+
+  
+</div>

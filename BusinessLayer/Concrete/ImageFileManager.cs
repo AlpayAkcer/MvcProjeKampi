@@ -18,9 +18,9 @@ namespace BusinessLayer.Concrete
             _imageFilesDal = imageFilesDal;
         }
 
-        public Contact GetByID(int id)
+        public ImageFiles GetByID(int id)
         {
-            throw new NotImplementedException();
+            return _imageFilesDal.Get(x => x.ImageId == id);
         }
 
         public List<ImageFiles> GetList()
@@ -28,19 +28,19 @@ namespace BusinessLayer.Concrete
             return _imageFilesDal.List();
         }
 
-        public void ImageFilesAdd(ImageFiles ımageFiles)
+        public void ImageFilesAdd(ImageFiles imageFiles)
         {
-            throw new NotImplementedException();
+            _imageFilesDal.Insert(imageFiles);
         }
 
-        public void ImageFilesDelete(ImageFiles ımageFiles)
+        public void ImageFilesDelete(ImageFiles imageFiles)
         {
-            throw new NotImplementedException();
+            _imageFilesDal.Delete(imageFiles);
         }
 
-        public void ImageFilesUpdate(ImageFiles ımageFiles)
+        public void ImageFilesUpdate(ImageFiles imageFiles)
         {
-            throw new NotImplementedException();
+            _imageFilesDal.Update(imageFiles);
         }
     }
 }

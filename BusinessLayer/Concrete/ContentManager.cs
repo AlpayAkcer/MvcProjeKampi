@@ -43,6 +43,11 @@ namespace BusinessLayer.Concrete
             return _contentDal.List();
         }
 
+        public List<Content> GetContentListByWriter()
+        {
+            return _contentDal.List(x => x.WriterId == 14);
+        }
+
         public List<Content> GetListByHeadingID(int id)
         {
             //Başlığa yazılmış olan içeriklerin hepsini getirecek.

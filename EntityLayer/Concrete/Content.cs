@@ -13,7 +13,7 @@ namespace EntityLayer.Concrete
         public int ContentId { get; set; }
         [StringLength(1000)]
         public string Description { get; set; }
-        public DateTime CreateDate { get; set; } = DateTime.Now;
+        public DateTime CreateDate { get; set; }
 
         public bool IsActive { get; set; }
 

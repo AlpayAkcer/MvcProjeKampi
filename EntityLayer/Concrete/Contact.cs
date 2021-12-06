@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace EntityLayer.Concrete
 {
@@ -11,17 +12,14 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int ContactId { get; set; }
-        [StringLength(70)]
+        [StringLength(50)]
         public string UserName { get; set; }
-        [StringLength(70)]
-        public string Surname { get; set; }
-        public DateTime CreateDate { get; set; } = DateTime.Now;
-        [StringLength(150)]
-        public string Email { get; set; }
-        [StringLength(100)]
+        [StringLength(50)]
+        public string UserMail { get; set; }
+        [StringLength(50)]
         public string Subject { get; set; }
-        [StringLength(500)]
-        public string Messge { get; set; }
-        public bool IsActive { get; set; }
+        public DateTime ContactDate { get; set; }
+        public string Message { get; set; }
+        public bool Read { get; set; }
     }
 }

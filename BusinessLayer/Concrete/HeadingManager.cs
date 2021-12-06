@@ -33,6 +33,21 @@ namespace BusinessLayer.Concrete
             _headingDal.Insert(heading);
         }
 
+        public List<Heading> HeadingByCategory(int id)
+        {
+            return _headingDal.List(x => x.CategoryId == id);
+        }
+
+        public List<Heading> HeadingByWriter(int id)
+        {
+            return _headingDal.List(x => x.WriterId == id);
+        }
+
+        public List<Heading> HeadingByWriter()
+        {
+            return _headingDal.List(x => x.WriterId == 13);
+        }
+
         public void HeadingDelete(Heading heading)
         {
             if (heading.IsActive == false)
@@ -48,8 +63,6 @@ namespace BusinessLayer.Concrete
 
         public void HeadingUpdate(Heading heading)
         {
-            //Deneme amaçlı yazıldı.
-            //heading.CreateDate = DateTime.Now;
             _headingDal.Update(heading);
         }
     }

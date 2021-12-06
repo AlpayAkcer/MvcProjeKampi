@@ -1,0 +1,54 @@
+﻿@using EntityLayer.Concrete
+@model List<Talent>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Yeteneklerim</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            #
+                        </th>
+                        <th>
+                            Yetenek Adı
+                        </th>
+                        <th>
+                            Oran
+                        </th>
+                        <th>
+                            İşlemler
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th>@item.TalentId</th>
+                            <th>@item.Name</th>
+                            <td>@item.Percent</td>
+                            <td>
+                                <a href="/Talent/UpdateTalent/@item.TalentId" class="btn btn-warning">Güncelle</a>
+                                <a href="/Talent/DeleteTalent/@item.TalentId" class="btn btn-danger">Sil</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <a href="/Talent/AddTalent" class="btn btn-primary float-right">Yeni Yetenek Ekle</a>
+        </div>
+    </div>
+    <!-- /.card -->
+</div>

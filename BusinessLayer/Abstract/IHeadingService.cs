@@ -13,6 +13,13 @@ namespace BusinessLayer.Abstract
         void HeadingAddBL(Heading heading);
         Heading GetByID(int id);
         void HeadingDelete(Heading heading);
+        List<Heading> HeadingByCategory(int id);
+
+        //Yazarların yazdığı başlıklar için
+        List<Heading> HeadingByWriter();
+
+        //Admin paneldeki adminin yazdığı başlıklar için.
+        List<Heading> HeadingByWriter(int id);
         void HeadingUpdate(Heading heading);
     }
 }

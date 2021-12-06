@@ -22,5 +22,6 @@ namespace MVCProjeKampi.Controllers
             Response.TrySkipIisCustomErrors = true;
             return View();
         }
+     
     }
 }
